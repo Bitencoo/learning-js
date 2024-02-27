@@ -21,7 +21,6 @@ document.querySelector(".again").addEventListener("click", function () {
 document.querySelector(".check").addEventListener("click", function () {
   const guess = Number(document.querySelector(".guess").value);
 
-  console.log(guess);
   noNumberSelected(guess);
 
   if (guess === randomNumber) {
@@ -49,7 +48,6 @@ function generateNewRandomNumber() {
 }
 
 function noNumberSelected(guess) {
-  console.log(guess == null);
   if (!guess) {
     setMessage("No number selected!");
     return;
